@@ -24,3 +24,11 @@ This repository contains the files for a website project created for a client. T
 - `logo.png`
 
 These are the image files used in the project.
+
+## Features
+
+1. **Navigation Menu**
+3. **Contact Form**
+4. **Interactive Food Types Display**
+5. **Order Placement**
+
