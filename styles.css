@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jost&family=Libre+Baskerville&family=Nunito&family=Roboto:wght@300&family=Russo+One&display=swap');
+
+body {
+    font-family: Nunito;
+    margin: 0;
+    padding: 0;
+}
+
+/* .../Navbar\... */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-right: 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffd700;
+}
+
+/* .../Drop-Down\... */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    z-index: 1;
+    margin-top: 5px;
+    margin-left: -10px;
+    border: 1px solid white;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.5s;
+}
+
+.dropdown-content a:hover {
+    background-color: #4b4a4a;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn i {
+    margin-left: 4px;
+}
+
+/* .../Footer\... */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-content {
+    max-height: 130px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    margin-top: 25px;
+    max-width: 65px;
+    height: auto;
+}
+
+.footer-logo p {
+    margin-top: -10px;
+    font-family: Nunito;
+}
+
+.social-links {
+    display: flex;
+    align-items: right;
+    position: relative;
+    left: 1000px;
+    bottom: 50px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-left: 1rem;
+    transition: transform 0.3s;
+}
+
+.social-links a i {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+/* .../Top Head\... */
+#top-head {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* .../Order Form\... */
+.order-section {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+.order-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.order-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.order-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.order-form {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.order-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.order-form input,
+.order-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.order-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-button:hover {
+    background-color: #555;
+}
+
+.order-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+/* .../Contact\... */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-content p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.contact-form {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #555;
+}
+
+/* .../Food Types\... */
+.menu {
+    max-width: 800px;
+    margin-bottom: 100px;
+    margin-left: 230px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.food-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.food-description {
+    color: #333;
+}
+
+.food-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.food-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.food-h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.buy-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* .../Main Homepage\... */
+.intro-section {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #444;
+    margin: 10px 0;
+}
+
+.menu-list li::before {
+    content: "\2022";
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-right: 10px;
+}
+
+.location {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.address {
+    font-style: normal;
+    color: #777;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+
+
